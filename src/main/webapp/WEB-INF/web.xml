@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name>maptrack</display-name>
+  
+  
+  <servlet>
+        <servlet-name>XmlServiceServlet</servlet-name>
+        <servlet-class>com.maptrack.server.XmlService</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>XmlServiceServlet</servlet-name>
+        <url-pattern>/com.maptrack.Main/XmlService</url-pattern>
+    </servlet-mapping>
+  
+	<servlet> 
+		<servlet-name>FileUploadServlet</servlet-name> 
+		<servlet-class>com.maptrack.server.FileUploadServlet</servlet-class> 
+	</servlet> 
+	<servlet-mapping> 
+		<servlet-name>FileUploadServlet</servlet-name> 
+		<url-pattern>/com.maptrack.Main/fileupload</url-pattern> 
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>welcomeGWT.html</welcome-file>
+	</welcome-file-list>
+</web-app>
