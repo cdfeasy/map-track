@@ -1,0 +1,1 @@
+D:\java\appengine-java-sdk-1.5.1\bin\appcfg.cmd --enable_jar_splitting update D:\Dropbox\SupportProjects\map-track\target\maptrack-1.0
